@@ -26,21 +26,22 @@ body {
 
 .mobile-menu {
     padding: 2.4rem;
+    
+}
+
+.mobile-menu ul li a{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
 }
 
 .mobile-menu ul{
     margin-top: 2.4rem;
     font-size: var(--md);
-}
-
-.mobile-menu a {
-    text-decoration: none;
-    color: val(--black);
-    font-weight: bold;
+    list-style: none;
 }
 
 .mobile-menu ul li {
-    list-style-type: none;
     margin-bottom: 2.4rem;
 }
 
@@ -48,12 +49,12 @@ body {
     border-bottom: .1rem solid var(--very-light-pink);
 }
 
-.email {
+.bottom-list .email {
     font-size: var(--sm);
-    font-weight: 300 !important;
+    font-weight: 300;
 }
 
-.sign-out {
+.bottom-list .sign-out {
     font-size: var(--sm);
     color: var(--hospital-green);
 }
