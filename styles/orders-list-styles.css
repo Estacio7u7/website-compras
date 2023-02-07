@@ -1,0 +1,80 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.title {
+    font-size: var(--lg);
+    margin-bottom: 3.2rem;
+}
+
+.my-order {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    place-items: center;
+
+}
+
+.my-order-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 30rem;
+
+    font-size: var(--sm);
+}
+
+.my-order-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.order {
+    height: 6rem;
+    display: grid;
+    padding: 0 2.4rem;
+    margin-bottom: 1.2rem;
+    grid-template-columns: auto 1fr auto;
+    gap: 1.6rem;
+    
+    align-items: center;
+
+}
+
+.order p {
+    font-weight: bold;
+}
+
+.order p:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+
+.order p:nth-child(1) span:nth-child(2){
+    color: var(--very-light-pink);
+}
+
+.order p:nth-child(2){
+    text-align: end;
+}
