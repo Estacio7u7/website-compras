@@ -1,0 +1,61 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.desktop-menu {
+    width: 15rem;
+    height: auto;
+    padding: 2rem 2rem 0 2rem;
+
+    border: .1rem solid var(--very-light-pink);
+    border-radius: .6rem;
+}
+
+.desktop-menu ul {
+    list-style: none;
+    font-size: var(--md);
+}
+
+.desktop-menu ul li{
+    text-align: end;
+    font-weight: bold;
+}
+
+.desktop-menu ul li:last-child{
+    padding-top: 2rem;
+    border-top: .1rem solid var(--very-light-pink);
+}
+
+.desktop-menu ul li:last-child a{
+    color: var(--hospital-green);
+    font-size: var(--sm);
+}
+
+.desktop-menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    color: var(--black);
+}
