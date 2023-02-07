@@ -1,0 +1,65 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.mobile-menu {
+    padding: 2.4rem;
+}
+
+.mobile-menu ul{
+    margin-top: 2.4rem;
+    font-size: var(--md);
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: val(--black);
+    font-weight: bold;
+}
+
+.mobile-menu ul li {
+    list-style-type: none;
+    margin-bottom: 2.4rem;
+}
+
+.mobile-menu ul:nth-child(1) {
+    border-bottom: .1rem solid var(--very-light-pink);
+}
+
+.email {
+    font-size: var(--sm);
+    font-weight: 300 !important;
+}
+
+.sign-out {
+    font-size: var(--sm);
+    color: var(--hospital-green);
+}
+
+.bottom-list {
+    position: absolute;
+    bottom: 0;
+    border-bottom: 1.6rem;
+}
