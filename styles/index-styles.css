@@ -24,6 +24,141 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+/* Styles for the navigation bar on the index */
+
+.menu {
+    display: none;
+}
+
+.logo {
+    width: 10rem;
+}
+
+nav {
+    display: flex;
+
+    margin-bottom: 1.4rem;
+       
+    width: 100%;
+    justify-content: space-between;
+
+    border-bottom: .1rem solid var(--very-light-pink);
+
+    padding: 0 2.4rem;
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+}
+
+.navbar-left ul, .navbar-right ul{
+    display: flex;
+
+    height: 6rem;
+    align-items: center;
+
+    font-size: var(--md);
+    list-style: none;
+}
+
+.navbar-left ul li a, .navbar-right ul li a {
+    text-decoration: none;
+    color: var(--very-light-pink);
+    border: .1rem solid var(--white);
+    padding: .8rem;
+    border-radius: .8rem;
+}
+
+.navbar-left ul li a:hover, .navbar-right ul li a :hover{
+    color: var(--hospital-green);
+    border: .1rem solid var(--hospital-green);
+}
+
+.navbar-email {
+    position: relative;
+    color: var(--very-light-pink);
+    font-size: var(--sm);
+    margin-right: 1.6rem;
+}
+
+.navbar-email:hover {
+    cursor: pointer;
+}
+
+.navbar-shopping-cart div {    
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    top: 10px;
+    right: 24px;
+
+    width: 1.5rem;
+    height: 1.5rem;
+    
+    background-color: var(--hospital-green);
+    border-radius: 50%;
+    
+    font-size: var(--sm);
+    font-weight: bold;
+}
+
+/* styles for the desktop menu */
+
+
+.desktop-menu {
+    position: absolute;
+    top: 6rem;
+    right: 6rem;
+
+    width: 15rem;
+    height: auto;
+    padding: 2rem 2rem 0 2rem;
+
+    background: var(--white);
+    border: .1rem solid var(--very-light-pink);
+    border-radius: .6rem;
+}
+
+.inactive {
+    display: none;
+}
+
+.desktop-menu ul {
+    list-style: none;
+    font-size: var(--md);
+}
+
+.desktop-menu ul li{
+    text-align: end;
+    font-weight: bold;
+}
+
+.desktop-menu ul li:last-child{
+    padding-top: 2rem;
+    border-top: .1rem solid var(--very-light-pink);
+}
+
+.desktop-menu ul li:last-child a{
+    color: var(--hospital-green);
+    font-size: var(--sm);
+}
+
+.desktop-menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    color: var(--black);
+}
+
+
+
+
+
+/* styles for the body */
+
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, 24rem);
@@ -73,6 +208,21 @@ body {
 }
 
 @media (max-width: 640px) {
+
+    /* styles for the menu */
+    .menu {
+        display: block;
+    }
+    .navbar-left ul {
+        display: none;
+    }
+
+    .navbar-email {
+        display: none;
+    }
+
+    /* styles for the body */
+
     .card-container{
         display: grid;
         grid-template-columns: repeat(auto-fill, 14rem);

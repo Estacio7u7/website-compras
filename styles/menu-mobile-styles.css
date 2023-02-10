@@ -25,6 +25,7 @@ body {
 }
 
 .mobile-menu {
+    position: absolute;
     padding: 2.4rem;
     
 }
