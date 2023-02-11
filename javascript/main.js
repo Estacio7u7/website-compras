@@ -2,10 +2,13 @@ const navBarEmail = document.querySelector('.navbar-email');
 const desktopMenu = document.querySelector('.desktop-menu');
 const navbarShoppingCart = document.querySelector('.navbar-shopping-cart')
 
+const productDetailsClose = document.querySelector('.close-product-details')
+
 
 const navbarHamMenu = document.querySelector('.hamburguer-menu');
 const mobileMenu = document.querySelector('.mobile-menu');
-const shoppingCart  = document.querySelector('.shopping-cart')
+const shoppingCart  = document.querySelector('#shopping-cart')
+const productDetails = document.querySelector('#product-details')
 
 navBarEmail.addEventListener('click', toggleDesktopMenu);
 function toggleDesktopMenu() {
@@ -17,6 +20,12 @@ function toggleDesktopMenu() {
     if(!mobileMenu.classList.contains('inactive')){
         mobileMenu.classList.toggle('inactive');
     }
+
+    // if the product details is open, close it
+    if(!productDetails.classList.contains('inactive')){
+        productDetails.classList.toggle('inactive');
+    }
+
 
     // show or close the desktop menu
     desktopMenu.classList.toggle('inactive');
@@ -34,6 +43,11 @@ function toggleMobileMenu() {
         !desktopMenu.classList.toggle('inactive');
     }
 
+    // if the product details is open, then close it
+    if (!productDetails.classList.contains('inactive')){
+        productDetails.classList.toggle('inactive');
+    }
+
     // show or close the mobile menu
     mobileMenu.classList.toggle('inactive');
 }
@@ -49,6 +63,11 @@ function toggleShoppingCart() {
     // if the desktop menu is open, then close it
     if(!desktopMenu.classList.contains('inactive')){
         desktopMenu.classList.toggle('inactive');
+    }
+
+    // if the product details is open, then close it
+    if (!productDetails.classList.contains('inactive')){
+        productDetails.classList.toggle('inactive')
     }
 
     // Show or close the cart
@@ -203,10 +222,37 @@ function renderProduct(productArray) {
 
         productCard.appendChild(productImg);
         productCard.appendChild(productInfo);
-
+        
+        productCard.addEventListener('click', openProductDetail)
         cardContainer.appendChild(productCard)
 
     }
 }
 
 renderProduct(productList);
+
+function openProductDetail(){
+    // if the shopping cart is open, then close it
+    if(!shoppingCart.classList.contains('inactive')){
+        shoppingCart.classList.toggle('inactive');
+    }
+
+    // if the desktop menu is open, then close it
+    if(!desktopMenu.classList.contains('inactive')){
+        desktopMenu.classList.toggle('inactive');
+    }
+
+    // if the mobile menu is open, the close it
+    if(!mobileMenu.classList.contains('inactive')){
+        mobileMenu.classList.toggle('inactive')
+    }
+
+    // open the product details
+    productDetails.classList.remove('inactive')
+}
+
+productDetailsClose.addEventListener('click', closeProductDetails)
+function closeProductDetails() {
+    // close the product details
+    productDetails.classList.add('inactive');
+}

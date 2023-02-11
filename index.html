@@ -133,7 +133,7 @@
 
     <!-- Shopping cart -->
 
-    <aside class="shopping-cart inactive">
+    <aside id="shopping-cart" class="inactive">
         <div class="navbar">
             <img src="./icons/flechita.svg" alt="return to shopping">
             
@@ -162,62 +162,9 @@
                 
             </div>
 
-            <div class="shopping-cart__item">
-                <figure>
-                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
-                </figure>
-
-                <p>
-                    Bicicleta
-                </p>
-
-                <p>
-                    $350.00
-                </p>
-
-                <img src="./icons/icon_close.png" alt="remove from cart">
-                
-            </div>
-
-            <div class="shopping-cart__item">
-                <figure>
-                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
-                </figure>
-
-                <p>
-                    Bicicleta
-                </p>
-
-                <p>
-                    $350.00
-                </p>
-
-                <img src="./icons/icon_close.png" alt="remove from cart">
-                
-            </div>
-
-            <div class="shopping-cart__item">
-                <figure>
-                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
-                </figure>
-
-                <p>
-                    Bicicleta
-                </p>
-
-                <p>
-                    $350.00
-                </p>
-
-                <img src="./icons/icon_close.png" alt="remove from cart">
-                
-            </div>
-
-            
-            
         </div>
 
-        <div class="cart-footer">
+        <div class="stick-to-bottom">
 
             <div class="order-total">
                 <p>Total</p>
@@ -234,6 +181,41 @@
         
 
     </aside>
+
+    <!-- Product details -->
+
+    <aside id="product-details" class="inactive">
+        <figure class="close-product-details">
+            <img src="./icons/icon_close.png" alt="close product details">
+        </figure>
+
+        <figure class="product-img">
+            <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike">
+        </figure>
+
+        <div class="points">
+            <div></div>
+
+            <div></div>
+
+            <div></div>
+        </div>
+
+        <div class="product-information">
+            <p>$120,00</p>
+
+            <p>Bike</p>
+
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic laudantium distinctio exercitationem quod nisi numquam temporibus architecto tempore ad dolore odio pariatur natus, error dicta molestias. Odio, ipsum cumque! Iure.</p>
+        </div>
+        <div class="stick-to-bottom">
+            <button class="primary-button">
+                <img src="./icons/bt_add_to_cart.svg" alt="cart">
+                <p>Add to cart</p>
+            </button>
+        </div>
+    </aside>
+
 
     <!-- Grid for products on the main page -->
     <section class="main-container">
